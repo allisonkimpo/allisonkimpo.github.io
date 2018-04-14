@@ -16,10 +16,10 @@
 
     var length = prompt("What is the length of the rectangle?");
     var width = prompt("What is the width of the rectangle");
-    var perimeter = (parseInt(length)+ parseInt(width));
+    var perimeter = (parseInt(length * 2)+ parseInt(width * 2));
     result += "The perimeter of the rectangle is " + perimeter + "<br>";
     
-    var area = (parseInt(length)*parseInt(width));
+    var area = (parseInt(length) * parseInt(width));
     result += "The area of the rectangle is " + area + "<br>";
     
     document.getElementById('demo').innerHTML= result;
