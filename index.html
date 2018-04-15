@@ -23,13 +23,23 @@
     <p id = "demo"></p>
     <script>
     var yourName = prompt("What is your name?");
-    result = "Nice to meet you " + yourName + "<br>";
+    result = "Nice to meet you " + yourName + "." + "<br>" + "<br>";
 
-    var x = 1038;
-    var y = 1002938;
-    var sum = x+y;
-    result += "I enjoy math, so here is a math equation: When x= " + x + " and y= " + y + " , then the sum= " + sum;
+    var x = prompt("What is your favorite number?");
+    var y = prompt("What is your second favorite number?");
+    var sum = parseInt(x) + parseInt (y);
+    result += "I enjoy math, so here is a valid math statement using yourr favorite numbers: When x= " + x + " and y= " + y + ", then the sum= " + sum + "." + "<br>" + "<br>";
 
+    var width = 928;
+    var length = 824;
+    var area = parseInt(length) * parseInt(width);
+    result += "I enjoy math because it is useful in real world situations. For example, if I needed to fill a bathtub with water, and it had a width of " + width + " liters by a length of " + length + " liters, then I would need " + area + " square liters of water." + "<br>" + "<br>";
+    
+    
+    var x = 10;
+    x %= 4;
+    result += "Math is also never-ending! For example, instead of simply solving 10/4, you can also find the remainder of 10/4, which is " + x + "." + "<br>" + "<br>";
+    document.getElementById('demo').innerHTML = result;
     </script>
 </body>
 </html>
