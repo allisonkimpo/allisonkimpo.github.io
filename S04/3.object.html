@@ -19,14 +19,19 @@
     var myPerson = {
         name: "Allison Kim",
         ethnicity: "Korean",
-        hairColor: "black"
+        hairColor: "black",
+
+        getNameAndEthnicity: function () {
+            return this.name + " " + this.ethnicity;
+        }
     };
 
     console.log(myPerson.name);
     console.log(myPerson["ethnicity"]);
     console.log(myPerson["hairColor"]);
+    console.log(myPerson.getNameAndEthnicity());
 
-    
+
     </script>
 </body>
 </html>
