@@ -9,7 +9,10 @@
 <body style="text-align:center; background-color: lavender">
     <h1 style="text-align:center"style= "font-size:3000">My Home Page</h1>
     <button onclick="document.getElementById('demo').innerHTML = Date()">Click me to display the date and time</button>
-    <button onclick="document.getElementById('demo').style.visibility='visible'">Click me to hide the date and time</button>
+    <br>
+    <br>
+    <button onclick = "addFour()">Add Four</button>;
+
     <p id ="demo"></p>
     <hr>
     <br>
@@ -32,23 +35,25 @@
     var sum = parseInt(x) + parseInt (y);
     result += "I enjoy math, so here is a valid math statement using your" + "<br>" + " favorite numbers: When x= " + x + " and y= " + y + ", then the sum= " + sum + "." + "<br>" + "<br>";
 
-    var width = 928;
-    var length = 824;
-    var area = parseInt(length) * parseInt(width);
-    result += "I enjoy math because it is useful in real world situations." + "<br>" + "For example, if I needed to fill a bathtub with water, and it had a" + "<br>" + " width of " + width + " liters by a length of " + length + " liters, then I would need " + area + " square liters of water." + "<br>" + "<br>";
+    var area = parseInt(x) * parseInt(y);
+    result += "I enjoy math because it is useful in real world situations." + "<br>" + "For example, if I needed to fill a bathtub with water, and it had a" + "<br>" + " width of " + x + " liters by a length of " + y + " liters, then I would need " + area + " square liters of water." + "<br>" + "<br>";
     
+    var remainder = x%y;
+    result += "Math is also never-ending! For example, instead of simply solving " + x + " divided by " + y + ", you" + "<br>" + " can also find the remainder of " + x + " divided by " + y + ", which is " + remainder + "." + "<br>" + "<br>";
     
-    var x = 10;
-    x %= 4;
-    result += "Math is also never-ending! For example, instead of simply solving 10/4, you" + "<br>" + " can also find the remainder of 10/4, which is " + x + "." + "<br>" + "<br>";
+    var cookies = x % y;
+    result += "You can use this remainder concept in the real world. For example, if" + "<br>" + " Bryan were to recieve the cookies remaining after evenly dividing the " + x + " cookies he made" + "<br>" + " among his " + y + " friends, he would get " + cookies
+    + " cookies." + "<br>" + "<br>";
     
-    var start = 309;
-    var people = 6;
-    var cookies = start % people;
-    result += "You can use this remainder concept in the real world. For example, if" + "<br>" + " Bryan were to recieve the cookies remaining after evenly dividing the " + start + " cookies he made" + "<br>" + " among his " + people + " friends, he would get " + cookies
-    + " cookies." + "<br>";
-
+    var question = prompt("Betsie needs help with a math problem: What is 4*4?")
+    result += "Check your answer to Betsie's problem, 4*4, by using the 'Add Four' button above :)"
+    
+    var count = 0;
+    function addFour(){
+        count+=4;
+        document.getElementById('demo').innerHTML= count;
+    }
     document.getElementById('demo').innerHTML = result;
-    </script>
+</script>
 </body>
 </html>
