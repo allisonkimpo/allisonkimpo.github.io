@@ -43,8 +43,8 @@
     
     var start = 309;
     var people = 6;
-    var cookies = 309%6;
-    result += "If Bryan were to recieve the cookies remaining after dividing the " + start + "cookies he made among his " + people + " friends evenly, he would get " + 
+    var cookies = start % people;
+    result += "You can use this remainder concept in the real world. For example, if Bryan were to recieve the cookies remaining after dividing the " + start + " cookies he made among his " + people + " friends evenly, he would get " + 
     + " cookies." + "<br>";
 
     document.getElementById('demo').innerHTML = result;
