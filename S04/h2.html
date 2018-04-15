@@ -7,10 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <p id="demo">Display the result here.</p>
+    <p id="demo"></p>
     <script>
     var person = {firstName:"John", lastName: "Doe"};
-    console.log(person["firstName"])
+    document.getElementById('demo').innerHTML= person.firstName;
     </script>
 </body>
 </html>
