@@ -11,6 +11,7 @@
     <button onclick="document.getElementById('demo').innerHTML = Date()">Click me to display the date and time</button>
    <p id ="demo"></p>
     <hr>
+    <br>
     <img title= "Nice to meet you!" width="700"src="http://www.socialventurepartners.org/arizona/wp-content/uploads/sites/57/2017/01/welcome.jpg" alt=""> 
     <p style= "font-size: 1500">This is my <strong>first</strong> time experimenting with website design!</p> 
     <h2 style="font-size:1700">All About Me</h2>
@@ -39,6 +40,13 @@
     var x = 10;
     x %= 4;
     result += "Math is also never-ending! For example, instead of simply solving 10/4, you can also find the remainder of 10/4, which is " + x + "." + "<br>" + "<br>";
+    
+    var start = 309;
+    var people = 6;
+    var cookies = 309%6;
+    result += "If Bryan were to recieve the cookies remaining after dividing the " + start + "cookies he made among his " + people + " friends evenly, he would get " + 
+    + " cookies." + "<br>";
+
     document.getElementById('demo').innerHTML = result;
     </script>
 </body>
